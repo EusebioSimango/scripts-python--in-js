@@ -1,7 +1,7 @@
 const { spawn } = require('child_process')
 
 
-const pythonOne = spawn("python3", ['script.py'])
+const pythonOne = spawn("python3", ['script.py', 'visit'])
 
 pythonOne.stdout.on('data', data => {
 	console.log(`stdout: ${data}`)
@@ -12,5 +12,5 @@ pythonOne.stderr.on('data', data => {
 })
 
 pythonOne.on('close', code => {
-	console.log(`close: ${code}`)
+	console.log(`process ended: ${code}`)
 })
