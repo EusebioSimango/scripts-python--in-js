@@ -1,4 +1,5 @@
 import sys
 
 print('Hello, world!!')
-print(f'Welcome to {str(sys.argv)}')
+name = str(sys.argv[1])
+print(f'Hello, {name}!')

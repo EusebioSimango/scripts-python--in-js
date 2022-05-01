@@ -1,7 +1,7 @@
 const { spawn } = require('child_process')
 
 
-const pythonOne = spawn("python3", ['script.py', 'visit'])
+const pythonOne = spawn("python3", ['script.py', 'eusebio Simango'])
 
 pythonOne.stdout.on('data', data => {
 	console.log(`stdout: ${data}`)
